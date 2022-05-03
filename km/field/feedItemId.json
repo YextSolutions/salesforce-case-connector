@@ -1,0 +1,14 @@
+{
+  "$id": "salesforceCase_feedItemId",
+  "$schema": "https://schema.yext.com/config/km/field/v1",
+  "description": "",
+  "displayName": "Feed Item ID",
+  "group": "NONE",
+  "localization": "PRIMARY_ONLY",
+  "type": {
+    "stringType": {
+      "stereotype": "SIMPLE"
+    }
+  },
+  "typeId": "string"
+}

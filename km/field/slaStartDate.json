@@ -1,0 +1,12 @@
+{
+  "$id": "salesforceCase_slaStartDate",
+  "$schema": "https://schema.yext.com/config/km/field/v1",
+  "description": "",
+  "displayName": "SLA Start Date",
+  "group": "NONE",
+  "localization": "PRIMARY_ONLY",
+  "type": {
+    "dateType": {}
+  },
+  "typeId": "date"
+}

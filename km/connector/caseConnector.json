@@ -1,0 +1,554 @@
+{
+  "$id": "salesforceCase_caseConnector",
+  "$schema": "https://schema.yext.com/config/km/connector/v3",
+  "displayName": "Salesforce Case Connector",
+  "entityType": "salesforceCase_case",
+  "source": {
+    "sourceConfig": {
+      "nativeSourceConfig": {
+        "source": "salesforce",
+        "operation": "fetchObjects",
+        "inputs": {
+          "instanceUrl": "https://csyextqa-dev-ed.lightning.force.com",
+          "object": "Case",
+          "salesforceLinkedAccount": "57"
+        }
+      }
+    },
+    "selectors": [
+      {
+        "type": "JSON",
+        "header": "AccountId",
+        "path": "AccountId"
+      },
+      {
+        "type": "JSON",
+        "header": "BusinessHoursId",
+        "path": "BusinessHoursId"
+      },
+      {
+        "type": "JSON",
+        "header": "Comments",
+        "path": "Comments"
+      },
+      {
+        "type": "JSON",
+        "header": "CaseNumber",
+        "path": "CaseNumber"
+      },
+      {
+        "type": "JSON",
+        "header": "ClosedDate",
+        "path": "ClosedDate"
+      },
+      {
+        "type": "JSON",
+        "header": "CommunityId",
+        "path": "CommunityId"
+      },
+      {
+        "type": "JSON",
+        "header": "ConnectionReceivedId",
+        "path": "ConnectionReceivedId"
+      },
+      {
+        "type": "JSON",
+        "header": "ConnectionSentId",
+        "path": "ConnectionSentId"
+      },
+      {
+        "type": "JSON",
+        "header": "ContactEmail",
+        "path": "ContactEmail"
+      },
+      {
+        "type": "JSON",
+        "header": "ContactFax",
+        "path": "ContactFax"
+      },
+      {
+        "type": "JSON",
+        "header": "ContactId",
+        "path": "ContactId"
+      },
+      {
+        "type": "JSON",
+        "header": "ContactMobile",
+        "path": "ContactMobile"
+      },
+      {
+        "type": "JSON",
+        "header": "ContactPhone",
+        "path": "ContactPhone"
+      },
+      {
+        "type": "JSON",
+        "header": "CreatorFullPhotoUrl",
+        "path": "CreatorFullPhotoUrl"
+      },
+      {
+        "type": "JSON",
+        "header": "CreatorName",
+        "path": "CreatorName"
+      },
+      {
+        "type": "JSON",
+        "header": "CreatorSmallPhotoUrl",
+        "path": "CreatorSmallPhotoUrl"
+      },
+      {
+        "type": "JSON",
+        "header": "Description",
+        "path": "Description"
+      },
+      {
+        "type": "JSON",
+        "header": "FeedItemId",
+        "path": "FeedItemId"
+      },
+      {
+        "type": "JSON",
+        "header": "HasCommentsUnreadByOwner",
+        "path": "HasCommentsUnreadByOwner"
+      },
+      {
+        "type": "JSON",
+        "header": "HasSelfServiceComments",
+        "path": "HasSelfServiceComments"
+      },
+      {
+        "type": "JSON",
+        "header": "IsClosed",
+        "path": "IsClosed"
+      },
+      {
+        "type": "JSON",
+        "header": "IsClosedOnCreate",
+        "path": "IsClosedOnCreate"
+      },
+      {
+        "type": "JSON",
+        "header": "IsDeleted",
+        "path": "IsDeleted"
+      },
+      {
+        "type": "JSON",
+        "header": "IsEscalated",
+        "path": "IsEscalated"
+      },
+      {
+        "type": "JSON",
+        "header": "IsSelfServiceClosed",
+        "path": "IsSelfServiceClosed"
+      },
+      {
+        "type": "JSON",
+        "header": "IsStopped",
+        "path": "IsStopped"
+      },
+      {
+        "type": "JSON",
+        "header": "IsVisibleInSelfService",
+        "path": "IsVisibleInSelfService"
+      },
+      {
+        "type": "JSON",
+        "header": "Language",
+        "path": "Language"
+      },
+      {
+        "type": "JSON",
+        "header": "LastReferencedDate",
+        "path": "LastReferencedDate"
+      },
+      {
+        "type": "JSON",
+        "header": "LastViewedDate",
+        "path": "LastViewedDate"
+      },
+      {
+        "type": "JSON",
+        "header": "MasterRecordId",
+        "path": "MasterRecordId"
+      },
+      {
+        "type": "JSON",
+        "header": "Origin",
+        "path": "Origin"
+      },
+      {
+        "type": "JSON",
+        "header": "OwnerId",
+        "path": "OwnerId"
+      },
+      {
+        "type": "JSON",
+        "header": "ParentId",
+        "path": "ParentId"
+      },
+      {
+        "type": "JSON",
+        "header": "Priority",
+        "path": "Priority"
+      },
+      {
+        "type": "JSON",
+        "header": "QuestionId",
+        "path": "QuestionId"
+      },
+      {
+        "type": "JSON",
+        "header": "Reason",
+        "path": "Reason"
+      },
+      {
+        "type": "JSON",
+        "header": "RecordTypeId",
+        "path": "RecordTypeId"
+      },
+      {
+        "type": "JSON",
+        "header": "SlaStartDate",
+        "path": "SlaStartDate"
+      },
+      {
+        "type": "JSON",
+        "header": "SourceId",
+        "path": "SourceId"
+      },
+      {
+        "type": "JSON",
+        "header": "Status",
+        "path": "Status"
+      },
+      {
+        "type": "JSON",
+        "header": "StopStartDate",
+        "path": "StopStartDate"
+      },
+      {
+        "type": "JSON",
+        "header": "Subject",
+        "path": "Subject"
+      },
+      {
+        "type": "JSON",
+        "header": "SuppliedCompany",
+        "path": "SuppliedCompany"
+      },
+      {
+        "type": "JSON",
+        "header": "SuppliedEmail",
+        "path": "SuppliedEmail"
+      },
+      {
+        "type": "JSON",
+        "header": "SuppliedName",
+        "path": "SuppliedName"
+      },
+      {
+        "type": "JSON",
+        "header": "SuppliedPhone",
+        "path": "SuppliedPhone"
+      },
+      {
+        "type": "JSON",
+        "header": "Type",
+        "path": "Type"
+      },
+      {
+        "type": "JSON",
+        "header": "ID",
+        "path": "Id"
+      }
+    ]
+  },
+  "transforms": [
+    {
+      "formatDates": {
+        "inputHeaders": {
+          "headers": [
+            "ClosedDate",
+            "LastReferencedDate",
+            "LastViewedDate",
+            "SlaStartDate",
+            "StopStartDate"
+          ]
+        },
+        "inputFormat": "yyyy-MM-dd\u0027T\u0027HH:mm:ss.SSSX"
+      }
+    },
+    {
+      "removeUnwantedChars": {
+        "inputHeaders": {
+          "headers": [
+            "ContactFax",
+            "ContactMobile",
+            "ContactPhone",
+            "SuppliedPhone"
+          ]
+        },
+        "cleanOptions": [
+          "REMOVE_WHITESPACE",
+          "REMOVE_NON_NUMERICS"
+        ]
+      }
+    }
+  ],
+  "mappings": [
+    {
+      "field": "salesforceCase_origin",
+      "header": "Origin",
+      "subfieldPath": []
+    },
+    {
+      "field": "salesforceCase_accountId",
+      "header": "AccountId",
+      "subfieldPath": []
+    },
+    {
+      "field": "salesforceCase_isSelfServiceClosed",
+      "header": "IsSelfServiceClosed",
+      "subfieldPath": []
+    },
+    {
+      "field": "salesforceCase_businessHoursId",
+      "header": "BusinessHoursId",
+      "subfieldPath": []
+    },
+    {
+      "field": "salesforceCase_feedItemId",
+      "header": "FeedItemId",
+      "subfieldPath": []
+    },
+    {
+      "field": "salesforceCase_suppliedName",
+      "header": "SuppliedName",
+      "subfieldPath": []
+    },
+    {
+      "field": "salesforceCase_suppliedPhone",
+      "header": "SuppliedPhone",
+      "subfieldPath": []
+    },
+    {
+      "field": "salesforceCase_creatorFullPhotoUrl",
+      "header": "CreatorFullPhotoUrl",
+      "subfieldPath": []
+    },
+    {
+      "field": "salesforceCase_isClosedOnCreate",
+      "header": "IsClosedOnCreate",
+      "subfieldPath": []
+    },
+    {
+      "field": "entityId",
+      "header": "ID",
+      "subfieldPath": []
+    },
+    {
+      "field": "salesforceCase_masterRecordId",
+      "header": "MasterRecordId",
+      "subfieldPath": []
+    },
+    {
+      "field": "salesforceCase_contactMobile",
+      "header": "ContactMobile",
+      "subfieldPath": []
+    },
+    {
+      "field": "salesforceCase_status",
+      "header": "Status",
+      "subfieldPath": []
+    },
+    {
+      "field": "salesforceCase_isDeleted",
+      "header": "IsDeleted",
+      "subfieldPath": []
+    },
+    {
+      "field": "salesforceCase_hasCommentsUnreadByOwner",
+      "header": "HasCommentsUnreadByOwner",
+      "subfieldPath": []
+    },
+    {
+      "field": "salesforceCase_priority",
+      "header": "Priority",
+      "subfieldPath": []
+    },
+    {
+      "field": "salesforceCase_lastViewedDate",
+      "header": "LastViewedDate",
+      "subfieldPath": []
+    },
+    {
+      "field": "salesforceCase_isStopped",
+      "header": "IsStopped",
+      "subfieldPath": []
+    },
+    {
+      "field": "salesforceCase_isEscalated",
+      "header": "IsEscalated",
+      "subfieldPath": []
+    },
+    {
+      "field": "salesforceCase_creatorName",
+      "header": "CreatorName",
+      "subfieldPath": []
+    },
+    {
+      "field": "salesforceCase_description",
+      "header": "Description",
+      "subfieldPath": []
+    },
+    {
+      "field": "salesforceCase_suppliedCompany",
+      "header": "SuppliedCompany",
+      "subfieldPath": []
+    },
+    {
+      "field": "salesforceCase_sourceId",
+      "header": "SourceId",
+      "subfieldPath": []
+    },
+    {
+      "field": "salesforceCase_lastReferencedDate",
+      "header": "LastReferencedDate",
+      "subfieldPath": []
+    },
+    {
+      "field": "salesforceCase_contactId",
+      "header": "ContactId",
+      "subfieldPath": []
+    },
+    {
+      "field": "salesforceCase_isClosed",
+      "header": "IsClosed",
+      "subfieldPath": []
+    },
+    {
+      "field": "salesforceCase_reason",
+      "header": "Reason",
+      "subfieldPath": []
+    },
+    {
+      "field": "salesforceCase_connectionSentId",
+      "header": "ConnectionSentId",
+      "subfieldPath": []
+    },
+    {
+      "field": "salesforceCase_contactPhone",
+      "header": "ContactPhone",
+      "subfieldPath": []
+    },
+    {
+      "field": "salesforceCase_suppliedEmail",
+      "header": "SuppliedEmail",
+      "subfieldPath": []
+    },
+    {
+      "field": "salesforceCase_language",
+      "header": "Language",
+      "subfieldPath": []
+    },
+    {
+      "field": "salesforceCase_ownerId",
+      "header": "OwnerId",
+      "subfieldPath": []
+    },
+    {
+      "field": "salesforceCase_connectionReceivedId",
+      "header": "ConnectionReceivedId",
+      "subfieldPath": []
+    },
+    {
+      "field": "salesforceCase_recordTypeId",
+      "header": "RecordTypeId",
+      "subfieldPath": []
+    },
+    {
+      "field": "salesforceCase_caseNumber",
+      "header": "CaseNumber",
+      "subfieldPath": []
+    },
+    {
+      "field": "salesforceCase_contactFax",
+      "header": "ContactFax",
+      "subfieldPath": []
+    },
+    {
+      "field": "salesforceCase_hasSelfServiceComments",
+      "header": "HasSelfServiceComments",
+      "subfieldPath": []
+    },
+    {
+      "field": "salesforceCase_parentId",
+      "header": "ParentId",
+      "subfieldPath": []
+    },
+    {
+      "field": "salesforceCase_slaStartDate",
+      "header": "SlaStartDate",
+      "subfieldPath": []
+    },
+    {
+      "field": "salesforceCase_comments",
+      "header": "Comments",
+      "subfieldPath": []
+    },
+    {
+      "field": "salesforceCase_communityId",
+      "header": "CommunityId",
+      "subfieldPath": []
+    },
+    {
+      "field": "salesforceCase_isVisibleInSelfService",
+      "header": "IsVisibleInSelfService",
+      "subfieldPath": []
+    },
+    {
+      "field": "salesforceCase_stopStartDate",
+      "header": "StopStartDate",
+      "subfieldPath": []
+    },
+    {
+      "field": "name",
+      "header": "Subject",
+      "subfieldPath": []
+    },
+    {
+      "field": "salesforceCase_type",
+      "header": "Type",
+      "subfieldPath": []
+    },
+    {
+      "field": "salesforceCase_creatorSmallPhotoUrl",
+      "header": "CreatorSmallPhotoUrl",
+      "subfieldPath": []
+    },
+    {
+      "field": "salesforceCase_questionId",
+      "header": "QuestionId",
+      "subfieldPath": []
+    },
+    {
+      "field": "salesforceCase_contactEmail",
+      "header": "ContactEmail",
+      "subfieldPath": []
+    },
+    {
+      "field": "salesforceCase_closedDate",
+      "header": "ClosedDate",
+      "subfieldPath": []
+    }
+  ],
+  "scheduleConfig": {
+    "customSchedule": {
+      "timeZone": "America/New_York",
+      "startDate": "2022-05-02",
+      "startTime": "00:00",
+      "frequencyType": "DAILY"
+    },
+    "runMode": "COMPREHENSIVE"
+  }
+}

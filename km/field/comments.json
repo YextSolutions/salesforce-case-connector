@@ -1,0 +1,14 @@
+{
+  "$id": "salesforceCase_comments",
+  "$schema": "https://schema.yext.com/config/km/field/v1",
+  "description": "",
+  "displayName": "Comments",
+  "group": "NONE",
+  "localization": "OVERRIDABLE",
+  "type": {
+    "stringType": {
+      "stereotype": "MULTILINE"
+    }
+  },
+  "typeId": "string"
+}

@@ -1,0 +1,12 @@
+{
+  "$id": "salesforceCase_contactMobile",
+  "$schema": "https://schema.yext.com/config/km/field/v1",
+  "description": "",
+  "displayName": "Contact Mobile",
+  "group": "NONE",
+  "localization": "PRIMARY_ONLY",
+  "type": {
+    "decimalType": {}
+  },
+  "typeId": "decimal"
+}

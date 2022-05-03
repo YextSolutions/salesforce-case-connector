@@ -1,0 +1,7 @@
+{
+  "$id": "salesforceCase_case",
+  "$schema": "https://schema.yext.com/config/km/entity-type/v2",
+  "description": "Use this entity type for your Salesforce Cases!",
+  "displayName": "Salesforce Case",
+  "pluralDisplayName": "Salesforce Cases"
+}

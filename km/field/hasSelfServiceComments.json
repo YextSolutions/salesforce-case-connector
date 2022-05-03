@@ -1,0 +1,12 @@
+{
+  "$id": "salesforceCase_hasSelfServiceComments",
+  "$schema": "https://schema.yext.com/config/km/field/v1",
+  "description": "",
+  "displayName": "Has Self Service Comments",
+  "group": "NONE",
+  "localization": "PRIMARY_ONLY",
+  "type": {
+    "booleanType": {}
+  },
+  "typeId": "boolean"
+}

@@ -1,0 +1,12 @@
+{
+  "$id": "salesforceCase_isSelfServiceClosed",
+  "$schema": "https://schema.yext.com/config/km/field/v1",
+  "description": "",
+  "displayName": "Is Self Service Closed",
+  "group": "NONE",
+  "localization": "PRIMARY_ONLY",
+  "type": {
+    "booleanType": {}
+  },
+  "typeId": "boolean"
+}

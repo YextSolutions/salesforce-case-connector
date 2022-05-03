@@ -1,0 +1,14 @@
+{
+  "$id": "salesforceCase_description",
+  "$schema": "https://schema.yext.com/config/km/field/v1",
+  "description": "",
+  "displayName": "Description",
+  "group": "NONE",
+  "localization": "OVERRIDABLE",
+  "type": {
+    "stringType": {
+      "stereotype": "MULTILINE"
+    }
+  },
+  "typeId": "string"
+}
