@@ -293,6 +293,29 @@
           "REMOVE_NON_NUMERICS"
         ]
       }
+    },
+    {
+      "addColumn": {
+        "newColumnHeader": "Instance URL",
+        "columnValue": "${{salesforceInstanceUrl}}/lightning/r/Case/"
+      }
+    },
+    {
+      "addColumn": {
+        "newColumnHeader": "URL End",
+        "columnValue": "/view"
+      }
+    },
+    {
+      "mergeColumns": {
+        "inputHeaders": [
+          "Instance URL",
+          "ID",
+          "URL End"
+        ],
+        "newColumnHeader": "Landing Page URL",
+        "delimiter": ""
+      }
     }
   ],
   "mappings": [
@@ -539,6 +562,11 @@
     {
       "field": "salesforceCase_closedDate",
       "header": "ClosedDate",
+      "subfieldPath": []
+    },
+    {
+      "field": "landingPageUrl",
+      "header": "Landing Page URL",
       "subfieldPath": []
     }
   ],
