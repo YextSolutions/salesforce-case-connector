@@ -50,7 +50,8 @@
     "salesforceCase_suppliedEmail",
     "salesforceCase_suppliedName",
     "salesforceCase_suppliedPhone",
-    "salesforceCase_type"
+    "salesforceCase_type",
+    "landingPageUrl"
   ],
   "required": []
 }
